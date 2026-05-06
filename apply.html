@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot beans Junior</title>
+</head>
+<body>
+  <div class="page">
+    <header class="top-row">
+      <div class="logo-box">
+        <div class="logo" style="justify-content: center; width: 100%;">
+            <img src="logo.png" class="logo-img" alt="Logo"/>
+        </div>
+      </div>
+      <div class="header-box">
+        <div class="site-header">
+            <img src="image (4).png">
+    
+        </div>
+      </div>
+    </header>
+   <div class="hyperlingling">
+    <h2>Other webpages</h2>
+    <div class="link-list">
+      <a href="index.html">home</a>
+      <a href="courses.html">courses</a>
+      <a href="apply.html">apply</a>
+      <a href="requirements.html">requirements</a>
+      <a href="developers.html">developers</a>
+    </div>
+   </div>
+    <main class="main-content">
+      <section class="application-section">
+        <h1>Application Form</h1>
+        <form class="application-form" action="#" method="post">
+          <input type="hidden" name="_token" value="27d0b40bc1a342b0ea44c02819e5c643">
+          <div class="field-row"><label for="full-name">Full Name</label><input id="full-name" name="full-name" type="text" placeholder="Your full name" required></div>
+          <div class="field-row"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+          <div class="field-row"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="+1 234 567 890" required></div>
+          <div class="field-row"><label for="position">Position</label><select id="position" name="position" required><option value="">Select a position</option><option value="web-dev">Web Developer</option><option value="designer">Designer</option><option value="support">Support</option></select></div>
+          <div class="field-row"><label for="resume-link">Resume Link</label><input id="resume-link" name="resume-link" type="url" placeholder="https://onedrive.live.com/... or https://docs.google.com/... or https://<company>.sharepoint.com/..." required></div>
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+  
+
+
+ 
+    </main>
+  </div>
+</body>
+</html>
+
+<style>
+  :root {
+    --bg: #f5f7fb;
+    --panel: #000000;
+    --text: #1f2937;
+    --muted: #4b5563;
+    --border: #a0522d;
+    --faded-blue: #add8e6;
+    --yellow: #ffd700;
+  }
+
+  .image1 {
+    width: 200px;
+    height: 200px;
+    background: #d1d5db;
+    border-radius: 8px;
+    object-fit: cover;
+    border: solid;
+    border-width: 3px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background-color: var(--faded-blue);
+    color: var(--text);
+    padding: 16px;
+  }
+
+p, h,a, pre {
+  font-family: "Gabriela", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+  .page {
+    margin: 0 auto;
+    background: var(--panel);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+    background-color: var(--yellow)
+  }
+
+  .top-row {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 12px;
+    padding: 16px;
+    background-color: green;;
+    border-bottom: 1px solid var(--border);
+    align-items: stretch;
+  }
+
+  .logo-box,
+  .header-box {
+    border: 1px solid rgb(2, 67, 2);
+    border-radius: 10px;
+    background-color: green;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-box {
+    min-height: 70px;
+    justify-content: flex-start;
+  }
+
+  .header-box {
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .site-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .site-header h1 {
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+  }
+
+  .logo-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 12px;
+  }
+
+  .logo-text {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #111827;
+  }
+
+  .site-header p {
+    color: var(--muted);
+  }
+
+  .main-content {
+    padding: 20px;
+    line-height: 1.6;
+    color: #111827;
+  }
+
+  .application-section {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #0b6623;
+    border-radius: 12px;
+    border: 1px solid #1f941f;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 20px;
+    color: #f7fee7;
+  }
+
+  .application-section h1 {
+    margin-bottom: 14px;
+    text-align: center;
+    color: #111827;
+    font-size: 1.6rem;
+  }
+
+  .application-form {
+    display: grid;
+    gap: 12px;
+  }
+
+  .field-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  label {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #ecfdf3;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #8bc34a;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    background: #f9fff4;
+    color: #0f172a;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  }
+
+  button[type="submit"] {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background: #1f7a1f;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .2s ease;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  button[type="submit"]:hover {
+    background: #155f17;
+  }
+
+  button[type="submit"]:hover {
+    background: #4338ca;
+  }
+
+  .hyperlingling {
+    padding: 16px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 12px 16px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .hyperlingling h2 {
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 1.25rem;
+  }
+
+  .link-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .link-list a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111827;
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 999px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 130px;
+    text-align: center;
+    transition: all .2s ease;
+    display: inline-block;
+  }
+
+  .link-list a:hover {
+    background: #e2e8f0;
+    border-color: #94a3b8;
+    transform: translateY(-1px);
+  }
+
+  .main-content h2 { margin-bottom: 8px; }
+
+</style>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+
+<script src="script.js"></script>

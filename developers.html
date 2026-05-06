@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot beans Junior - Developers</title>
+</head>
+<body>
+  <div class="page">
+    <header class="top-row">
+      <div class="logo-box">
+        <div class="logo" style="justify-content: center; width: 100%;">
+            <img onclick="window.location='/index.html'" src="logo.png" class="logo-img" alt="Logo"/>
+        </div>
+      </div>
+      <div class="header-box">
+        <div class="site-header">
+            <img src="image (4).png">
+    
+        </div>
+      </div>
+    </header>
+   <div class="hyperlingling">
+    <h2>Other webpages</h2>
+    <div class="link-list">
+      <a href="index.html">home</a>
+      <a href="courses.html">courses</a>
+      <a href="apply.html">apply</a>
+      <a href="requirements.html">requirements</a>
+      <a href="developers.html">developers</a>
+    </div>
+   </div>
+    <main class="main-content">
+     <h1 style="text-align: center;">Our Developers</h1>
+     <p>
+Our team of talented developers is the backbone of Hot Beans Junior. With expertise in modern web technologies, they create innovative solutions that bring your ideas to life. Meet some of our key developers below.
+     </p>
+     <br>
+     <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+       <div style="text-align: center; margin: 10px;">
+         <img src="alice.jpg" alt="Developer 1" style="width: 220px; height: 220px; object-fit: cover; margin-bottom: 12px; border-radius: 0;">
+         <h3>Alice Johnson</h3>
+         <p>Lead Frontend Developer</p>
+         <p>I design polished user interfaces and build responsive layouts with HTML, CSS, and JavaScript. I love bringing creative designs to life and helping users enjoy every interaction.</p>
+       </div>
+       <div style="text-align: center; margin: 10px;">
+         <img src="chapri.webp" alt="Developer 2" style="width: 220px; height: 220px; object-fit: cover; margin-bottom: 12px; border-radius: 0;">
+         <h3>Bob Smith</h3>
+         <p>Backend Specialist</p>
+         <p>I create stable and secure server-side systems that power our apps. I enjoy solving complex problems and building the invisible infrastructure that makes everything run smoothly.</p>
+       </div>
+       <div style="text-align: center; margin: 10px;">
+         <img src="je.png.webp" alt="Developer 3" style="width: 220px; height: 220px; object-fit: cover; margin-bottom: 12px; border-radius: 0;">
+         <h3>Charlie Brown</h3>
+         <p>Full-Stack Engineer</p>
+         <p>I bridge frontend and backend development to build complete web solutions. I love crafting features that look great and perform well, and I’m always learning new tools to improve the product.</p>
+       </div>
+     </div>
+    </main>
+  </div>
+</body>
+</html>
+
+<style>
+  :root {
+    --bg: #f5f7fb;
+    --panel: #000000;
+    --text: #1f2937;
+    --muted: #4b5563;
+    --border: #a0522d;
+    --faded-blue: #add8e6;
+    --yellow: #ffd700;
+  }
+
+  .image1 {
+    width: 200px;
+    height: 200px;
+    background: #d1d5db;
+    border-radius: 8px;
+    object-fit: cover;
+    border: solid;
+    border-width: 3px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background-color: var(--faded-blue);
+    color: var(--text);
+    padding: 16px;
+  }
+
+p, h,a, pre {
+  font-family: "Gabriela", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+  .page {
+    margin: 0 auto;
+    background: var(--panel);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+    background-color: var(--yellow)
+  }
+
+  .top-row {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 12px;
+    padding: 16px;
+    background-color: green;;
+    border-bottom: 1px solid var(--border);
+    align-items: stretch;
+  }
+
+  .logo-box,
+  .header-box {
+    border: 1px solid rgb(2, 67, 2);
+    border-radius: 10px;
+    background-color: green;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-box {
+    min-height: 70px;
+    justify-content: flex-start;
+  }
+
+  .header-box {
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .site-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .site-header h1 {
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+  }
+
+  .logo-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 12px;
+  }
+
+  .logo-text {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #111827;
+  }
+
+  .site-header p {
+    color: var(--muted);
+  }
+
+  .main-content {
+    padding: 20px;
+    line-height: 1.6;
+    color: #111827;
+  }
+
+  .hyperlingling {
+    padding: 16px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 12px 16px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .hyperlingling h2 {
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 1.25rem;
+  }
+
+  .link-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .link-list a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111827;
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 999px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 130px;
+    text-align: center;
+    transition: all .2s ease;
+    display: inline-block;
+  }
+
+  .link-list a:hover {
+    background: #e2e8f0;
+    border-color: #94a3b8;
+    transform: translateY(-1px);
+  }
+
+  .main-content h2 { margin-bottom: 8px; }
+
+</style>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
